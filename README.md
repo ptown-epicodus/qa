@@ -19,6 +19,8 @@ You will need the following things properly installed on your computer.
 * `cd qa`
 * `npm install`
 * `bower install`
+* Connect to Firebase with `.env`
+* Seed Firebase with `seed.json`
 
 ## Running / Development
 

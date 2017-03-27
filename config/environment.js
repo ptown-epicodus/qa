@@ -1,5 +1,7 @@
 /* eslint-env node */
 
+var firebaseConfig = require('./../.env').firebaseConfig;
+
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'qa',
@@ -16,6 +18,7 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: firebaseConfig,
 
     APP: {
       // Here you can pass flags/options to your application instance
