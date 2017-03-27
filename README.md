@@ -25,6 +25,12 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
+## Planning
+
+### Configuration
+ * Firebase (`$ ember install emberfire`)
+ * Bootstrap (`$ ember install ember-bootstrap`)
+
 ### Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details
