@@ -1,1 +1,8 @@
 <h1>Index route</h1>
+
+<h2>Questions:</h2>
+<ul>
+  {{#each model as |question|}}
+    <li><strong>{{question.title}}</strong> - {{question.author}}</li>
+  {{/each}}
+</ul>
