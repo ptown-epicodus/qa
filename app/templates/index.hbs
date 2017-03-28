@@ -3,6 +3,6 @@
 <h2>Questions:</h2>
 <ul>
   {{#each model as |question|}}
-    <li><strong>{{question.title}}</strong> - {{question.author}}</li>
+    <li>{{#link-to 'question' question.id}}<strong>{{question.title}}</strong>{{/link-to}} - {{question.author}}</li>
   {{/each}}
 </ul>
