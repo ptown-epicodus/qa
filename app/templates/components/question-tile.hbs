@@ -1,3 +1,10 @@
 <h1>{{question.title}}</h1>
 <h2>Submitted by {{question.author}}</h2>
 <p>{{question.notes}}</p>
+
+<h2>Answers</h2>
+<ul>
+  {{#each question.answers as |answer|}}
+    <li>{{answer.content}}</li>
+  {{/each}}
+</ul>
