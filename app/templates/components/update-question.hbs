@@ -1,21 +1,25 @@
-<h6>Update "{{question.title}}"</h6>
-<div>
-  <form>
-    <div class="form-group">
-      <label for="title">Question</label>
-      {{input value=title placeholder=questionEditting.title}}
-    </div>
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h6 class="panel-title">Update "{{question.title}}"</h6>
+  </div>
+  <div class="panel-body">
+    <form>
+      <div class="form-group">
+        <label for="title">Question</label>
+        {{input class="form-control" value=title placeholder=questionEditting.title}}
+      </div>
 
-    <div class="form-group">
-      <label for="author">Author</label>
-      {{input value=author placeholder=questionEditting.author}}
-    </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input class="form-control" value=author placeholder=questionEditting.author}}
+      </div>
 
-    <div class="form-group">
-      <label for="notes">Notes</label>
-      {{input value=notes placeholder=questionEditting.notes}}
-    </div>
+      <div class="form-group">
+        <label for="notes">Notes</label>
+        {{textarea class="form-control" value=notes placeholder=questionEditting.notes}}
+      </div>
 
-    <button {{action 'update' question}}>Save</button>
-  </form>
+      <button {{action 'update' question}} class="btn btn-xs btn-warning">Save</button>
+    </form>
+  </div>
 </div>

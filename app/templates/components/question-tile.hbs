@@ -1,10 +1,25 @@
-<h1>{{question.title}}</h1>
-<h2>Submitted by {{question.author}}</h2>
-<p>{{question.notes}}</p>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h1>{{question.title}}</h1>
+    <h5>Submitted by {{question.author}}</h5>
+  </div>
+  <div class="panel-body">
 
-<h2>Answers</h2>
-<ul>
-  {{#each question.answers as |answer|}}
-    <li>{{answer.content}}</li>
-  {{/each}}
-</ul>
+    <p>{{question.notes}}</p>
+
+    {{#if question.answers.length}}
+    <div class="panel panel-warning">
+      <div class="panel-heading">
+        <h2 class="panel-title">Answers</h2>
+      </div>
+      <div class="panel-body">
+        <ul>
+          {{#each question.answers as |answer|}}
+          <li>{{answer.content}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    {{/if}}
+  </div>
+</div>
