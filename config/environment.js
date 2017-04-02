@@ -1,7 +1,5 @@
 /* eslint-env node */
 
-var firebaseConfig = require('./../.env').firebaseConfig;
-
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'qa',
@@ -18,7 +16,13 @@ module.exports = function(environment) {
         Date: false
       }
     },
-    firebase: firebaseConfig,
+    firebase: {
+      apiKey: "AIzaSyAACr20t-SlS3uWN5tuRj3KK726-mzyEm4",
+      authDomain: "message-board-4d300.firebaseapp.com",
+      databaseURL: "https://message-board-4d300.firebaseio.com",
+      storageBucket: "message-board-4d300.appspot.com",
+      messagingSenderId: "180544204813"
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
